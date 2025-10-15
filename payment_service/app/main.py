@@ -46,10 +46,10 @@ app.add_middleware(
 )
 
 # Mount static files
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
+app.mount("/static", StaticFiles(directory="payment_service.app/static"), name="static")
 
 # Initialize templates
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="payment_service.app/templates")
 
 # Include routers
 app.include_router(payments.router)
