@@ -1,18 +1,19 @@
-# Core FastAPI dependencies - Production ready versions
-fastapi==0.104.1
-uvicorn==0.24.0
-pydantic==2.5.0
+# Core FastAPI dependencies - Compatible with Python 3.11
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.6.1
+python-multipart==0.0.9
 
-# Database - SQLAlchemy pinned for Python 3.11 compatibility
-sqlalchemy==2.0.25
-alembic==1.12.1
+# Database
+sqlalchemy==2.0.27
+alembic==1.13.1
 psycopg2-binary==2.9.9
 
 # Template and static files
-jinja2==3.1.2
+jinja2==3.1.3
 
 # HTTP client
-httpx==0.25.2
+httpx==0.26.0
 
 # Environment management
-python-dotenv==1.0.0
+python-dotenv==1.0.1
