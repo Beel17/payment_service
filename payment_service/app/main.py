@@ -1,3 +1,7 @@
+"""
+FastAPI Payment Service - Main Application Entry Point
+Production-ready entry point for Render deployment
+"""
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates

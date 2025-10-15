@@ -1,7 +1,11 @@
+"""
+Configuration settings for FastAPI Payment Service
+Set environment variables in Render dashboard for production
+"""
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables from .env file (development only)
 load_dotenv()
 
 class Settings:
