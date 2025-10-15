@@ -2,11 +2,11 @@ from fastapi import APIRouter, Request, Form, Depends, HTTPException
 from fastapi.responses import RedirectResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
-from app.db import get_db
-from app.models import Transaction
-from app.services.paystack_service import PaystackService
-from app.services.verification import VerificationService
-from app.config import settings
+from payment_service.app.db import get_db
+from payment_service.app.models import Transaction
+from payment_service.app.services.paystack_service import PaystackService
+from payment_service.app.services.verification import VerificationService
+from payment_service.app.config import settings
 import logging
 
 router = APIRouter(prefix="/payments", tags=["payments"])

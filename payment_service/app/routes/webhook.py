@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
-from app.db import get_db
-from app.models import Transaction
-from app.config import settings
+from payment_service.app.db import get_db
+from payment_service.app.models import Transaction
+from payment_service.app.config import settings
 import json
 import logging
 

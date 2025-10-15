@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from app.models import Transaction
-from app.services.paystack_service import PaystackService
+from payment_service.app.models import Transaction
+from payment_service.app.services.paystack_service import PaystackService
 from typing import Optional
 
 class VerificationService:

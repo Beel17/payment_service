@@ -2,17 +2,22 @@
 FastAPI Payment Service - Main Application Entry Point
 Production-ready entry point for Render deployment
 """
+"""
+FastAPI Payment Service - Main Application Entry Point
+Production-ready entry point for Render deployment
+"""
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine
-from app.db import Base, engine
-from app.config import settings
-from app.routes import payments, webhook
+from payment_service.app.db import Base, engine
+from payment_service.app.config import settings
+from payment_service.app.routes import payments, webhook
 import logging
 
+# Rest of the code stays the same...
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,

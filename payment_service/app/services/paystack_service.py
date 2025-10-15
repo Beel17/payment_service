@@ -1,6 +1,6 @@
 import httpx
 from typing import Dict, Optional
-from app.config import settings
+from payment_service.app.config import settings
 
 class PaystackService:
     def __init__(self):
