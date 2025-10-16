@@ -10,7 +10,7 @@ from payment_service.app.config import settings
 import logging
 
 router = APIRouter(prefix="/payments", tags=["payments"])
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="payment_service/app/templates")
 
 # Initialize services
 paystack_service = PaystackService()
